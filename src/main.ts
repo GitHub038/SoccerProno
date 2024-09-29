@@ -1,10 +1,9 @@
-import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
-import { AppComponent } from './app/app.component';
-import { initializeApp } from 'firebase/app';
-import { environment } from './environments/environment';
+import { bootstrapApplication } from '@angular/platform-browser'
+import { appConfig } from './app/app.config'
+import { AppComponent } from './app/app.component'
+import { initializeApp } from 'firebase/app'
+import { environment } from './environments/environment'
 
-const app = initializeApp(environment.firebaseConfig);
+   const app = initializeApp(environment.firebaseConfig)
 
-bootstrapApplication(AppComponent, appConfig)
-  .catch((err) => console.error(err));
+bootstrapApplication(AppComponent, appConfig).catch((err) => console.error(err))
